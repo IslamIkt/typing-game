@@ -1,11 +1,14 @@
 'use strict'
 
+import { Score } from "./Score.js";
+
 const startBtn = document.querySelector('.start-btn');
 const wordEntry = document.querySelector('.word-entry');
 const words = document.querySelector('.words');
 const timer = document.querySelector('.timer');
 const score = document.querySelector('.score');
-const audio = new Audio ('./assets/audio_file01.mp3')
+const audio = new Audio ('./assets/audio_file01.mp3');
+audio.volume = 0.2;
 
 const wordList = ['dinosaur', 'love', 'pineapple', 'calendar', 'robot', 'building', 'population',
 'weather', 'bottle', 'history', 'dream', 'character', 'money', 'absolute',
@@ -46,6 +49,7 @@ function checkWord(){
 
 function reset(){
     if(x < 1 || scoreCount === 90){
+        const newScore = new Score( scoreCount, x - 90, (scoreCount / 90) * 100 )
         audio.pause();
         x = 99;
         scoreCount = 0;
