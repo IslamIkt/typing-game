@@ -1,0 +1,62 @@
+@import "./reset.css";
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: min(100%-30px, 1080);
+    margin-inline: auto;
+}
+
+.flexbox{
+    display: flex;
+}
+
+body{
+    background-color: #E6E6E6;
+}
+
+form{
+    background-color: #FF8552;
+    width: 500px;
+    height: 300px;
+    border-radius: 50px;
+    margin-top: 25%;
+}
+
+.words{
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+.start-btn{
+    margin-left: calc(50% - 60px);
+}
+
+.start-btn, .word-entry{
+    width: 120px;
+    height: 30px;
+    margin-top: 50px;
+}
+
+.word-entry{
+    position: relative;
+    left:calc(50% - 60px)
+}
+
+.invisible{
+    display: none;
+}
+
+.display{
+    margin-top: 60px;
+    font-size: 25px;
+}
+
+.score-div, .timer-div{
+    width: 50%;
+    margin-left: 70px;
+}
