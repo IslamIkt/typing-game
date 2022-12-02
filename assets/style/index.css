@@ -30,6 +30,7 @@ form{
 .words{
     margin-top: 50px;
     font-size: 20px;
+    user-select: none;
 }
 
 .start-btn{
